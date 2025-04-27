@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFileDownload } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 
 const Hero = () => {
@@ -47,12 +47,17 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="flex gap-4"
+        className="flex flex-wrap gap-4"
       >
         <Link to="projects" smooth={true} duration={500}>
           <button className="btn">View My Work</button>
         </Link>
-        <div className="flex gap-6 items-center ml-4">
+        
+        <a href="/resume.pdf" download className="btn flex items-center gap-2">
+          <FaFileDownload /> Resume
+        </a>
+        
+        <div className="flex gap-6 items-center ml-4 mt-2 sm:mt-0">
           <a href="https://github.com/mihir280" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-secondary transition-colors duration-300">
             <FaGithub />
           </a>

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { FaFileDownload } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -36,6 +37,25 @@ const About = () => {
               prioritizing performance and accessibility. I'm constantly learning new technologies 
               and improving my skills to stay current with industry trends.
             </p>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="mt-4"
+            >
+              <a 
+                href="/resume.pdf" 
+                download 
+                className="btn flex items-center gap-2 w-fit"
+              >
+                <FaFileDownload /> Download Resume
+              </a>
+              <p className="text-sm text-slate mt-2">
+                For a more detailed overview of my experience and skills, please download my resume.
+              </p>
+            </motion.div>
           </motion.div>
           
           <motion.div 
