@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-primary text-lightSlate;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-lightestSlate font-semibold;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply text-2xl md:text-3xl font-bold text-lightestSlate mb-8 flex items-center;
+  }
+  
+  .section-heading::after {
+    content: "";
+    @apply ml-4 h-px bg-lightestNavy flex-grow;
+  }
+  
+  .nav-link {
+    @apply hover:text-secondary transition-colors duration-300;
+  }
+  
+  .btn {
+    @apply px-6 py-3 border border-secondary text-secondary rounded hover:bg-secondary/10 transition-colors duration-300;
+  }
+}
