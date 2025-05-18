@@ -4,17 +4,17 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const Projects = () => {
   const projects = [
     {
-      title: "Todo App",
-      description: "Developed a full-stack Todo application with DevOps implementation for continuous deployment and container orchestration.",
+      title: "Fitness App",
+      description: "Developed a responsive fitness tracking application using React, integrating real-time API fetching for dynamic workout and nutrition data. Focused on a seamless user experience with clean UI and intuitive interactions.",
       features: [
-        "Task Management: Users can create, prioritize, and track tasks with priority levels.",
-        "DevOps Pipeline: Implemented CI/CD with Jenkins and Azure Pipelines.",
-        "Containerization: Docker and Kubernetes setup for reliable deployment.",
-        "Infrastructure as Code: Used Terraform for cloud infrastructure management."
+        "Workout Tracking: Users can search exercises, track workouts, and monitor progress with real-time API data.",
+        "Responsive Design: Built with React to ensure seamless experience across devices.",
+        "Frontend Deployment: Integrated continuous deployment via GitHub and Netlify for instant updates.",
+        "API Integration: Used third-party fitness and nutrition APIs for live data fetching."
       ],
-      technologies: ["JavaScript", "Node.js", "Docker", "Kubernetes", "Terraform", "Jenkins"],
-      github: "https://github.com/mihir280/Todo_APP",
-      live: "http://43.205.255.10:8000/todo",
+      technologies: ["JavaScript", "Node.js", "React", "APIs", "Vite"],
+      github: "https://github.com/mihir280/Fitness-app.git",
+      live: "https://fitness-app-gl8l.vercel.app/",
       year: "2024"
     },
     {
